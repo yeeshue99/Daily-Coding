@@ -28,4 +28,13 @@ class Timer:
 
     def Average(self, lst):
         avg = sum(lst) / len(lst)
-        print(f"Average: {0}", avg)
+        print(f"Average: {avg}s")
+        print(f"Average: {avg * 1000}ms")
+
+    def CalculateTime(self, func, *args):
+        timerList = []
+        for _ in range(10000):
+            self.Start()
+            print(func(*args))
+            timerList.append(self.Stop())
+        self.Average(timerList)
