@@ -1,6 +1,7 @@
+from collections import defaultdict
 class Solution(object):
     def CanSpell(self, mag, word):
-        numLetters = {}
+        numLetters = defaultdict(int)
         for letter in mag:
             if letter in numLetters:
                 numLetters[letter] = numLetters[letter] + 1

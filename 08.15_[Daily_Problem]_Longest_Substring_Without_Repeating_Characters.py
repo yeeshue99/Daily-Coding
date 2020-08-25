@@ -107,4 +107,3 @@ prob2 = timer.CalculateTime(Solution().longestUniqueSubsttr, s)
 
 print(f"Code 1: {prob1[0]} s,\n\t\t{prob1[1]}")
 print(f"Code 2: {prob2[0]} ms,\n\t\t{prob2[1]}")
-{}.
